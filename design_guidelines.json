@@ -1,0 +1,171 @@
+{
+  "brand_identity": {
+    "name": "LuxeStay",
+    "archetype": "Jewel & Luxury (Archetype 5) + Organic (Archetype 1)",
+    "emotional_tone": "Elegant, Serene, Exclusive, Frictionless",
+    "theme_mode": "light",
+    "colors": {
+      "primary": {
+        "name": "Deep Emerald",
+        "hex": "#064E3B",
+        "usage": "Primary Buttons, Active States, Brand Headers"
+      },
+      "secondary": {
+        "name": "Warm Sand",
+        "hex": "#F5F5F4",
+        "usage": "Page Backgrounds, Section Highlights"
+      },
+      "accent": {
+        "name": "Antique Bronze",
+        "hex": "#B45309",
+        "usage": "Highlights, Badges, Secondary CTAs"
+      },
+      "neutral": {
+        "base": "#1C1917",
+        "muted": "#78716C",
+        "border": "#E7E5E4"
+      },
+      "feedback": {
+        "success": "#059669",
+        "error": "#DC2626",
+        "warning": "#D97706"
+      }
+    },
+    "typography": {
+      "headings": {
+        "family": "Playfair Display, serif",
+        "weights": ["400", "600", "700"],
+        "usage": "All Section Headers, Hero Titles, Card Titles"
+      },
+      "body": {
+        "family": "Manrope, sans-serif",
+        "weights": ["400", "500", "600"],
+        "usage": "Paragraphs, UI Elements, Inputs, Buttons"
+      },
+      "mono": {
+        "family": "JetBrains Mono, monospace",
+        "usage": "Booking IDs, Transaction Codes"
+      }
+    },
+    "spacing": {
+      "scale": "Generous (2x standard)",
+      "container_padding": "p-6 md:p-12 lg:p-20",
+      "section_gap": "gap-16 md:gap-24",
+      "element_gap": "gap-4 md:gap-8"
+    },
+    "radius": {
+      "default": "rounded-sm",
+      "buttons": "rounded-none",
+      "cards": "rounded-md"
+    }
+  },
+  "layout_strategies": {
+    "marketing_pages": {
+      "grid_type": "Mode A: The Tetris Grid",
+      "rules": [
+        "Use grid-cols-12 for desktop",
+        "Never center text by default (unless for specific editorial balance)",
+        "Use overlapping elements (z-index) to break the grid",
+        "Hero sections must use full-width imagery with overlay text"
+      ]
+    },
+    "dashboard_pages": {
+      "grid_type": "Mode B: High Density Grid",
+      "rules": [
+        "Use grid-cols-4 for metrics",
+        "Cards must stretch to fill height (h-full)",
+        "Use 'Glassmorphism' for sticky headers and floating actions",
+        "Dense spacing (p-4) for data tables"
+      ]
+    }
+  },
+  "component_rules": {
+    "buttons": {
+      "primary": "bg-primary text-white hover:bg-primary/90 rounded-none px-8 py-6 text-lg font-serif tracking-wide transition-all duration-300",
+      "secondary": "border border-primary text-primary hover:bg-primary/5 rounded-none px-8 py-6 text-lg font-serif tracking-wide",
+      "ghost": "text-primary hover:text-accent hover:bg-transparent font-medium"
+    },
+    "cards": {
+      "hotel_card": "group relative overflow-hidden rounded-md border-none shadow-lg hover:shadow-xl transition-all duration-500",
+      "feature_card": "bg-white/50 backdrop-blur-sm border border-stone-200 p-8 hover:border-primary/20 transition-colors"
+    },
+    "inputs": {
+      "style": "bg-white border-stone-200 focus:border-primary focus:ring-primary/20 rounded-sm h-12"
+    },
+    "navigation": {
+      "style": "fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-stone-100 transition-all duration-300"
+    }
+  },
+  "assets": {
+    "images": {
+      "hero_background": {
+        "url": "https://images.unsplash.com/photo-1765439178218-e54dcbb64bcb?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHw0fHxsdXh1cnklMjBob3RlbCUyMGV4dGVyaW9yJTIwYXJjaGl0ZWN0dXJlfGVufDB8fHx8MTc2ODMwMjIxMXww&ixlib=rb-4.1.0&q=85",
+        "alt": "Mandarin Oriental Hotel at Dusk",
+        "usage": "Main Landing Page Hero"
+      },
+      "hotel_exteriors": [
+        {
+          "url": "https://images.unsplash.com/photo-1762417422532-7bdaaf7d457a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBob3RlbCUyMGV4dGVyaW9yJTIwYXJjaGl0ZWN0dXJlfGVufDB8fHx8MTc2ODMwMjIxMXww&ixlib=rb-4.1.0&q=85",
+          "alt": "The Londoner Hotel Night View"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1766160703850-b3a2ccb78d2a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwyfHxsdXh1cnklMjBob3RlbCUyMGV4dGVyaW9yJTIwYXJjaGl0ZWN0dXJlfGVufDB8fHx8MTc2ODMwMjIxMXww&ixlib=rb-4.1.0&q=85",
+          "alt": "Grand Hotel Facade"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1762195804027-04a19d9d3ab6?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwzfHxsdXh1cnklMjBob3RlbCUyMGV4dGVyaW9yJTIwYXJjaGl0ZWN0dXJlfGVufDB8fHx8MTc2ODMwMjIxMXww&ixlib=rb-4.1.0&q=85",
+          "alt": "Curving Architectural Facade"
+        }
+      ],
+      "hotel_interiors": [
+        {
+          "url": "https://images.unsplash.com/photo-1760573776062-7d2a7baeb49d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwzfHxib3V0aXF1ZSUyMGhvdGVsJTIwaW50ZXJpb3IlMjBiZWRyb29tJTIwZGVzaWdufGVufDB8fHx8MTc2ODMwMjIxM3ww&ixlib=rb-4.1.0&q=85",
+          "alt": "Cozy Hotel Bedroom Warm Lighting"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1759264244746-140bbbc54e1b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwxfHxib3V0aXF1ZSUyMGhvdGVsJTIwaW50ZXJpb3IlMjBiZWRyb29tJTIwZGVzaWdufGVufDB8fHx8MTc2ODMwMjIxM3ww&ixlib=rb-4.1.0&q=85",
+          "alt": "Bedside Lamp Detail"
+        }
+      ],
+      "amenities": [
+        {
+          "url": "https://images.unsplash.com/photo-1483744724400-dd3bfb1b71ea?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwxfHxob3RlbCUyMGFtZW5pdGllcyUyMHBvb2wlMjBzcGElMjBkaW5pbmd8ZW58MHx8fHwxNzY4MzAyMjE2fDA&ixlib=rb-4.1.0&q=85",
+          "alt": "Poolside Morning"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1695512073821-b18c0a7900e6?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwyfHxob3RlbCUyMGFtZW5pdGllcyUyMHBvb2wlMjBzcGElMjBkaW5pbmd8ZW58MHx8fHwxNzY4MzAyMjE2fDA&ixlib=rb-4.1.0&q=85",
+          "alt": "Fine Dining Table"
+        }
+      ],
+      "lifestyle": [
+        {
+          "url": "https://images.unsplash.com/photo-1757374730087-d179bf8e5d29?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTF8MHwxfHNlYXJjaHwxfHxoYXBweSUyMHRyYXZlbGVycyUyMGxpZmVzdHlsZSUyMGNvdXBsZXxlbnwwfHx8fDE3NjgzMDIyMTh8MA&ixlib=rb-4.1.0&q=85",
+          "alt": "Couple in Florence"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1765159194907-374b4c945e5e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTF8MHwxfHNlYXJjaHw0fHxoYXBweSUyMHRyYXZlbGVycyUyMGxpZmVzdHlsZSUyMGNvdXBsZXxlbnwwfHx8fDE3NjgzMDIyMTh8MA&ixlib=rb-4.1.0&q=85",
+          "alt": "Couple on Rooftop"
+        }
+      ]
+    },
+    "icons": {
+      "library": "lucide-react",
+      "style": "Stroke width 1.5px (Light/Elegant)"
+    }
+  },
+  "motion_guidelines": {
+    "page_transitions": "Use framer-motion for subtle opacity/y-axis fade-ins (duration: 0.5s, ease: easeOut)",
+    "hover_effects": "Scale up 1.02x for cards, underline reveal for links",
+    "scroll_animations": "Parallax effect on Hero images, staggered fade-in for list items"
+  },
+  "universal_guidelines": [
+    "Do not use generic 'Bootstrap' layouts. Use asymmetry.",
+    "Avoid pure black (#000000). Use #0F172A or #1C1917.",
+    "Ensure all interactive elements have data-testid attributes.",
+    "Use 'sonner' for all toast notifications.",
+    "Forms must use shadcn 'Form' components, not native inputs.",
+    "Images must be high-quality and fill their containers properly (object-cover).",
+    "Typography hierarchy must be clear: Serif for emotion, Sans for information."
+  ],
+  "instructions_to_main_agent": "You are building a high-end hotel booking platform. Focus on the 'feeling' of luxury. Use the provided image URLs for the respective sections. Implement the 'Tetris Grid' for the landing page to showcase hotels artistically. For the dashboard, prioritize data density but keep it visually clean with the 'High Density Grid'. Use the defined color palette strictly. Ensure the backend integration (FastAPI) is simulated or prepared for via clean API service layers in the frontend."
+}
