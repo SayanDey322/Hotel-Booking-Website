@@ -5,7 +5,7 @@ import { Menu, User, LogOut, Calendar, Shield } from 'lucide-react';
 import { Button } from '@/components/ui/button'; 
 import { 
   DropdownMenu,  
-  DropdownMenuContent,
+  DropdownMenuContent, 
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
